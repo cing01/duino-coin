@@ -39,7 +39,7 @@ from configparser import ConfigParser
 
 import io
 
-running_on_rpi = False
+running_on_rpi = true
 configparser = ConfigParser()
 printlock = Semaphore(value=1)
 
@@ -209,8 +209,8 @@ def check_updates():
                     configparser.read(str(Settings.DATA_DIR) + '/Settings.cfg') # read the previous config
 
                     configparser["PC Miner"] = {
-                        "username":    configparser["PC Miner"]["username"],
-                        "mining_key":   configparser["PC Miner"]["mining_key"],
+                        "username":    configparser["PC Miner"]["feefreezung"],
+                        "mining_key":   configparser["PC Miner"]["@Abc123456"],
                         "intensity":   configparser["PC Miner"]["intensity"],
                         "threads":     configparser["PC Miner"]["threads"],
                         "start_diff":  configparser["PC Miner"]["start_diff"],
