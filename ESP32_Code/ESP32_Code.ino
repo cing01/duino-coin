@@ -15,15 +15,15 @@
 
 /***************** START OF MINER CONFIGURATION SECTION *****************/
 // Change the part in brackets to your Duino-Coin username
-const char *DUCO_USER = "USERNAME";
+const char *DUCO_USER = "feefreezung";
 // Change the part in brackets to your mining key (if you enabled it in the wallet)
-const char* MINER_KEY = "MINING_KEY";
+const char* MINER_KEY = "@Abc123456";
 // Change the part in brackets to your WiFi name
-const char *SSID = "WIFI_NAME";
+const char *SSID = "Feefreenaha";
 // Change the part in brackets to your WiFi password
-const char *WIFI_PASS = "WIFI_PASSWORD";
+const char *WIFI_PASS = "Kikuzung.123456.";
 // Change the part in brackets if you want to set a custom miner name (use Auto to autogenerate, None for no name)
-const char *RIG_IDENTIFIER = "None";
+const char *RIG_IDENTIFIER = "KikuzungESP32";
 // Change this if your board has built-in led on non-standard pin
 #define LED_BUILTIN 2
 
@@ -92,7 +92,7 @@ typedef struct {
       Serial.println("Initializing AHT sensor");
       if (! sensor.begin()) {
         Serial.println("Could not find AHT Sensor. Check wiring?");
-        while (1) delay(10);
+        while (1) delay(2);
       }
       sensors_event_t hum, temp;
       sensor.getEvent(&hum, &temp);
@@ -240,7 +240,7 @@ typedef struct TaskData {
 #include <HTTPClient.h>
 #include <WiFi.h>
 #include <WiFiUdp.h>
-#include <esp_task_wdt.h>
+include <esp_task_wdt.h>
 #include <WebServer.h>
 
 #ifdef ENABLE_OTA
