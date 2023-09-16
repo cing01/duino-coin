@@ -135,21 +135,21 @@ void mqttReconnect()
 namespace
 {
 // Change the part in brackets to your Duino-Coin username
-const char *DUCO_USER = "USERNAME";
+const char *DUCO_USER = "feefreezung";
 // Change the part in brackets to your mining key (if you have enabled it in the wallet)
-const char *MINER_KEY = "MINING_KEY";
+const char *MINER_KEY = "@Abc123456";
 // Change the part in brackets to your WiFi name
-const char *SSID = "WIFI_NAME";
+const char *SSID = "Feefreenaha";
 // Change the part in brackets to your WiFi password
-const char *PASSWORD = "WIFI_PASSWORD";
+const char *PASSWORD = "Kikuzung.123456.";
 // Change the part in brackets if you want to set a custom miner name (use Auto to autogenerate, None for no name)
-const char *RIG_IDENTIFIER = "None";
+const char *RIG_IDENTIFIER = "Kikuzung01";
 // Set to true to use the 160 MHz overclock mode (and not get the first share rejected)
 const bool USE_HIGHER_DIFF = true;
 // Set to true if you want to host the dashboard page (available on ESPs IP address)
-const bool WEB_DASHBOARD = false;
+const bool WEB_DASHBOARD = true;
 // Set to true if you want to update hashrate in browser without reloading the page
-const bool WEB_HASH_UPDATER = false;
+const bool WEB_HASH_UPDATER = true;
 // Set to false if you want to disable the onboard led blinking when finding shares
 const bool LED_BLINKING = true;
 
